@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Modular Amplitude';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Modular Amplitude'), url('Modular Amplitude.otf') format('opentype');
+}
+
+h1 {
+    font-family: 'Modular Amplitude';
+    font-weight: 200;
+    color: #0ccac4
+}
