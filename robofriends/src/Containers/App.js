@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import CardList from '../Components/CardList';
 import SearchBox from '../Components/SearchBox';
 import Scroll from '../Components/Scroll';
-import ErrorBoundary from './ErrorBoundary';
 import './App.css';
 
 class App extends Component {
@@ -27,7 +26,6 @@ class App extends Component {
 
     onSearchChange = (event) => {
         this.setState({ searchfield: event.target.value })
-
     }
 
     render() {
@@ -43,9 +41,7 @@ class App extends Component {
                     <h1 className='f1'>RoboFriends</h1>
                     <SearchBox searchChange={this.onSearchChange}/>
                     <Scroll>
-                        <ErrorBoundary>
-                            <CardList Robots={filteredRobots}/>
-                        </ErrorBoundary>
+                        <CardList Robots={filteredRobots}/>
                     </Scroll>
                 </div>
             );
